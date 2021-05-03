@@ -12,7 +12,7 @@ NOTE: If you use Linux you will need to install docker-compose -> https://docs.d
 ## Quick Start
 #### Init Airflow
 If you use this repository for the first time or have used **remove_docker.sh** to remove docker images you will need to run the following command.  
-The **init.sh** bash script will create shared folders (dags, logs, plugins, data) with airflow workers and create a custom built Docker image of Airflow including pip package listed in *requirements.txt*
+The **init.sh** bash script will create shared folders (dags, logs, plugins, data) with airflow workers and create a custom built Docker image of Airflow including pip package listed in *requirements.txt*  
 Add your packages in requirements.txt to install your packages in the containers.  
 
 ```bash
