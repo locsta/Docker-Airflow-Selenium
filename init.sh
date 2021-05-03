@@ -1,6 +1,6 @@
 # Create folders shared 
-sudo mkdir dags logs plugins
-sudo chmod -R 777 dags logs plugins
+sudo mkdir dags logs plugins data
+sudo chmod -R 777 dags logs plugins data
 
 # Build custom Docker Image of apache/airflow
 sudo docker build -t apache/airflow:2.0.2 .
