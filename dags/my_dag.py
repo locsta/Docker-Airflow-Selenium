@@ -1,5 +1,4 @@
 import time
-from random import randint
 import pandas as pd
 from datetime import datetime
 
@@ -17,8 +16,8 @@ def test_selenium():
         driver.maximize_window()
         driver.get("https://github.com/locsta")
         time.sleep(10)
-        header = driver.find_element_by_tag_name("h2").text
-        pd.DataFrame([header]).to_csv(f"/opt/airflow/data/test{randint(1, 1000)}.csv")
+        header = driver.find_element_by_tag_name("h1").text
+        pd.DataFrame([header]).to_csv(f"/opt/airflow/data/{datetime.now()}.csv")
     except:
         driver.quit()
     finally:
