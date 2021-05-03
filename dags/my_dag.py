@@ -14,7 +14,7 @@ def test_selenium():
     try:
         driver = webdriver.Remote(command_executor='http://selenium-router:4444', desired_capabilities=DesiredCapabilities.OPERA)
         driver.maximize_window()
-        driver.get("https://github.com/locsta")
+        driver.get("https://github.com/locsta/Docker-Airflow-Selenium")
         time.sleep(10)
         header = driver.find_element_by_tag_name("h1").text
         pd.DataFrame([header]).to_csv(f"/opt/airflow/data/{datetime.now()}.csv")
