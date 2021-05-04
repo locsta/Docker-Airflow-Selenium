@@ -32,24 +32,27 @@ All the containers should now be running, you can now add your dags in the **dag
 ## Observe the Selenium nodes running
 You can have access to the web browsers (selenium nodes) running using a VNC Viewer  
 Here is a good VNC viewer if you don't have one installed yet -> https://www.realvnc.com/en/connect/download/viewer/  
-![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_viewer.png?raw=true)
 
-The password for all server is the same: "secret"  
+**You can access the various browser using the following VNC servers**
+| Browser | VNC Server Address| Password|
+| --- | --- | --- |
+| Chrome | 0.0.0.0:6900 | 'secret' |
+| Edge | 0.0.0.0:6901 | 'secret' |
+| Firefox | 0.0.0.0:6902 | 'secret' |
+| Opera | 0.0.0.0:6903 | 'secret' |
 
-You can access the various browser using the folling VNC servers
-  * Chrome  VNC Server: 0.0.0.0:6900
-  * Edge    VNC Server: 0.0.0.0:6901
-  * Firefox VNC Server: 0.0.0.0:6902
-  * Opera   VNC Server: 0.0.0.0:6903
 
 
-![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_selenium_grid.png?raw=true | width=250)  
-![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_opera.png?raw=true | width=250)
+| VNC Viewer GUI | VNC Server waiting for a Selenium node | VNC Server when running a Selenium node|
+| --- | --- | --- |
+| ![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_viewer.png?raw=true) | ![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_selenium_grid.png?raw=true)   | ![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_opera.png?raw=true) |
+
+
 
 
 
 ## Create your Airflow's dags
-Check the dags folder for an example of dag using selenium.  
+Check **my_dag.py** in the **dags** folder for a simple example of a dag using selenium.  
 The dag **my_dag.py** use Opera to get the text contained in the *h1* tag in this Github repo and save it in a .csv file in the *data* folder.  
 This dags runs every 3 minutes and you can see it running here at this link http://localhost:8080/tree?dag_id=my_dag  
 Observe the corresponding browser using VNC Viewer at this address: 0.0.0.0:6903  
