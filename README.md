@@ -26,7 +26,8 @@ The **start.sh** file will start the docker containers and open the Airflow webs
 ```bash
 ./start.sh
 ```
-If the webserver is not showing on the browser (usually takes a few seconds to load), go to this url: http://localhost:8080/  
+Access Airflow webserver through this link => http://localhost:8080/  
+Access Selenium Grid through this link => http://localhost:4444/  
 All the containers should now be running, you can now add your dags in the **dags** folder.  
 
 ## Observe the Selenium nodes running
