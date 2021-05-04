@@ -26,9 +26,13 @@ The **start.sh** file will start the docker containers and open the Airflow webs
 ```bash
 ./start.sh
 ```
-Access Airflow webserver through this link => http://localhost:8080/  
-Access Selenium Grid through this link => http://localhost:4444/  
 All the containers should now be running, you can now add your dags in the **dags** folder.  
+
+## Access Airflow's and Selenium's web interfaces
+| Interface | Server Address| Login| Password|
+| --- | --- | --- | --- |
+| Airflow Webserver | http://localhost:8080/   | airflow | airflow |
+| Selenium Grid | http://localhost:4444/  |  |  |
 
 ## Observe the Selenium nodes running
 You can have access to the web browsers (selenium nodes) running using a VNC Viewer  
@@ -37,14 +41,13 @@ Here is a good VNC viewer if you don't have one installed yet -> https://www.rea
 **You can access the various browser using the following VNC servers**
 | Browser | VNC Server Address| Password|
 | --- | --- | --- |
-| Chrome | 0.0.0.0:6900 | 'secret' |
-| Edge | 0.0.0.0:6901 | 'secret' |
-| Firefox | 0.0.0.0:6902 | 'secret' |
-| Opera | 0.0.0.0:6903 | 'secret' |
-
-
-
-| VNC Viewer GUI | VNC Server waiting for a Selenium node | VNC Server when running a Selenium node|
+| Chrome | 0.0.0.0:6900 | secret |
+| Edge | 0.0.0.0:6901 | secret |
+| Firefox | 0.0.0.0:6902 | secret |
+| Opera | 0.0.0.0:6903 | secret |
+  
+  
+| VNC Viewer GUI | VNC Server | VNC Server running a Selenium |
 | --- | --- | --- |
 | ![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_viewer.png?raw=true) | ![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_selenium_grid.png?raw=true)   | ![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_opera.png?raw=true) |
 
