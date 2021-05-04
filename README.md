@@ -32,7 +32,7 @@ All the containers should now be running, you can now add your dags in the **dag
 ## Observe the Selenium nodes running
 You can have access to the web browsers (selenium nodes) running using a VNC Viewer  
 Here is a good VNC viewer if you don't have one installed yet -> https://www.realvnc.com/en/connect/download/viewer/  
-![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_viewer.png | width=250)
+![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_viewer.png?raw=true)
 
 The password for all server is the same: "secret"  
 
@@ -43,8 +43,8 @@ You can access the various browser using the folling VNC servers
   * Opera   VNC Server: 0.0.0.0:6903
 
 
-![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_selenium_grid.png | width=250)
-![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_opera.png | width=250)
+![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_selenium_grid.png?raw=true | width=250)  
+![](https://github.com/locsta/Pictures/blob/main/Docker-Airflow-Selenium/vnc_opera.png?raw=true | width=250)
 
 
 
